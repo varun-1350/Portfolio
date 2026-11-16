@@ -1,0 +1,223 @@
+<?php
+/**
+ * Dedicated Project Page: Code Complexity & AST Visualizer
+ * Live Python 3.12 AST analysis engine integrated via PHP exec() gateway.
+ */
+require_once __DIR__ . '/counter.php';
+$stats = recordVisitorHit(false);
+$totalVisits = number_format($stats['total_visits'] ?? 1250);
+$uniqueVisits = number_format($stats['unique_visitors'] ?? 482);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Complexity & AST Visualizer - Python 3.12 Abstract Syntax Tree parser and McCabe Cyclomatic Complexity metrics by Varun Patil.">
+  <title>Python AST Visualizer // Varun Patil</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Neon Background Lights -->
+  <div class="ambient-glow-orb ambient-orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow-orb ambient-orb-3" aria-hidden="true"></div>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Header with Panda Logo -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.php" class="logo-brand" id="brandLogo">
+        <img src="assets/logo.jpg" alt="Varun Patil Logo" class="brand-logo-img">
+        <span class="logo-text">VARUN<span>.PATIL</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.php" class="nav-link">Home</a></li>
+        <li><a href="index.php#about" class="nav-link">About &amp; Resume</a></li>
+        <li><a href="index.php#projects" class="nav-link active">Projects</a></li>
+        <li><a href="index.php#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="live-counter-pill" id="liveVisitorPill">
+          <span class="pulse-dot"></span>
+          <span>Visits: <strong id="liveVisitorCount"><?= $totalVisits ?></strong></span>
+          <span style="color: var(--border-medium);">|</span>
+          <span style="color: var(--text-muted);">Unique: <strong id="uniqueVisitorCount"><?= $uniqueVisits ?></strong></span>
+        </div>
+        <a href="index.php#contact" class="nav-cta-btn">Let's Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-page-hero">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <a href="index.php">Home</a>
+      <span>/</span>
+      <a href="index.php#projects">Projects</a>
+      <span>/</span>
+      <span style="color: var(--text-primary);">Code Complexity &amp; AST Visualizer</span>
+    </nav>
+
+    <a href="index.php#projects" class="btn-back-portfolio">
+      <span>←</span> Return to Projects Grid
+    </a>
+
+    <div class="section-header" style="margin-bottom: 24px;">
+      <div class="section-tag">// BACKEND INTER-PROCESS COMMUNICATION</div>
+      <h1 class="section-title">Code Complexity &amp; <span class="gradient-text-cyan">AST Visualizer</span></h1>
+      <p class="section-subtitle">
+        A diagnostic engine that safely evaluates Python source code in real time through a PHP <code>exec()</code> gateway. Parses AST hierarchies, calculates McCabe Cyclomatic Complexity, and measures software maintainability.
+      </p>
+    </div>
+
+    <!-- Project Metadata Ribbon -->
+    <div class="project-meta-box">
+      <div class="project-meta-left">
+        <span class="badge-live status-purple">
+          <span class="pulse-dot" style="background: var(--neon-purple); width: 6px; height: 6px;"></span>
+          Python 3.12 Kernel Online
+        </span>
+        <span class="tech-tag">Python <code>ast</code> Module</span>
+        <span class="tech-tag">PHP <code>exec()</code> Gateway</span>
+        <span class="tech-tag">McCabe Complexity Engine</span>
+        <span class="tech-tag">JSON IPC Pipeline</span>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+        Gateway Timeout: 5000ms | Security: Isolated AST Parsing
+      </div>
+    </div>
+
+    <!-- AST Workbench Container -->
+    <div class="project-page-container">
+      <div class="project-page-body">
+        <div class="ast-workbench-grid">
+          <!-- Left: Code Input & Controls -->
+          <div class="code-editor-panel">
+            <div class="panel-header-bar">
+              <span>PYTHON SOURCE INPUT</span>
+              <select id="astPresetSelect" class="form-select" style="padding: 6px 12px; font-size: 0.82rem; width: auto;">
+                <option value="sorting">Preset: Hybrid TimSort</option>
+                <option value="tft_pricing">Preset: TFT Dynamic Pricing</option>
+                <option value="graph">Preset: Network Flow Solver</option>
+                <option value="syntax_err">Preset: Broken Syntax Test</option>
+              </select>
+            </div>
+
+            <textarea id="pythonCodeInput" class="python-code-input" style="height: 380px;" spellcheck="false"><?= htmlspecialchars(<<<'PYTHON'
+def hybrid_tim_sort(arr: list[int]) -> list[int]:
+    """Optimized hybrid sorting routine with insertion threshold."""
+    if len(arr) <= 1:
+        return arr
+    
+    threshold = 16
+    if len(arr) < threshold:
+        for i in range(1, len(arr)):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and arr[j] > key:
+                arr[j + 1] = arr[j]
+                j -= 1
+            arr[j + 1] = key
+        return arr
+    return sorted(arr)
+PYTHON) ?></textarea>
+
+            <div class="editor-actions-row">
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">
+                Endpoint: <code>POST /execute_python.php</code>
+              </span>
+              <button class="btn-run-python" id="btnRunAstAnalyze" style="padding: 12px 24px;">
+                <span>⚡</span> Analyze via Python Backend
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Metrics & AST Tree Results -->
+          <div class="ast-results-panel">
+            <div class="panel-header-bar">
+              <span>DIAGNOSTIC TELEMETRY</span>
+              <span id="astStatusBadge" style="font-weight: 700; color: var(--neon-cyan);">READY</span>
+            </div>
+
+            <!-- Mini stats row -->
+            <div class="ast-metrics-cards">
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricComplexityVal">3</div>
+                <div class="mini-stat-lbl">Cyclomatic Complexity</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricMiVal">82/100</div>
+                <div class="mini-stat-lbl">Maintainability Index</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricLocVal">14 / 18</div>
+                <div class="mini-stat-lbl">Logical / Total LOC</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricExecTimeVal">4.2 ms</div>
+                <div class="mini-stat-lbl">Subprocess Exec Time</div>
+              </div>
+            </div>
+
+            <!-- Collapsible AST Tree Output -->
+            <div class="ast-tree-viewer" id="astTreeViewer" style="height: 330px;">
+              <div style="color: var(--neon-cyan);">// Awaiting analysis payload...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Architecture & Security Specifications -->
+    <section>
+      <div class="section-tag">// COMPILER &amp; SECURITY INFRASTRUCTURE</div>
+      <h2 style="font-size: 1.6rem; margin-bottom: 20px;">Safe Subprocess Execution Architecture</h2>
+
+      <div class="architecture-notes-grid">
+        <div class="architecture-card">
+          <div class="arch-card-icon">🛡️</div>
+          <h3 class="arch-card-title">Pure AST Parsing Without `eval()`</h3>
+          <p class="arch-card-desc">
+            Zero execution danger: source payloads are strictly compiled into AST tokens via Python's standard library <code>ast.parse()</code> without ever invoking <code>exec()</code> or <code>eval()</code> on user logic.
+          </p>
+        </div>
+
+        <div class="architecture-card">
+          <div class="arch-card-icon">🔐</div>
+          <h3 class="arch-card-title">Sandboxed Shell Escaping</h3>
+          <p class="arch-card-desc">
+            The PHP gateway isolates payloads in temporary files with randomized hashes (`uniqid()`), escaping system command boundaries with <code>escapeshellarg()</code>.
+          </p>
+        </div>
+
+        <div class="architecture-card">
+          <div class="arch-card-icon">📊</div>
+          <h3 class="arch-card-title">McCabe Complexity Traversal</h3>
+          <p class="arch-card-desc">
+            An <code>ast.NodeVisitor</code> walks the syntax tree, enumerating decision points (<code>If</code>, <code>While</code>, <code>For</code>, <code>BoolOp</code>) to calculate McCabe's standard metric $V(G) = E - N + 2P$.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top: 80px;">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; <?= date('Y') ?> Varun Patil. Crafted with Vanilla HTML5, CSS3, ES6+, PHP 8.x &amp; Python 3.12.
+      </div>
+      <div class="footer-system-status">
+        <a href="project-snippets.php" style="color: var(--neon-cyan); text-decoration: none;">Next: Code Snippet Manager →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

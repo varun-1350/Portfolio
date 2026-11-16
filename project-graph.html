@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Graph & Data Visualization Studio - Hardware-accelerated Canvas physics engine and topological clustering by Varun Patil.">
+  <title>Graph &amp; Data Studio // Varun Patil</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Neon Background Lights -->
+  <div class="ambient-glow-orb ambient-orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow-orb ambient-orb-3" aria-hidden="true"></div>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Header with Panda Logo -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-brand" id="brandLogo">
+        <img src="assets/logo.jpg" alt="Varun Patil Logo" class="brand-logo-img">
+        <span class="logo-text">VARUN<span>.PATIL</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About &amp; Resume</a></li>
+        <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="live-counter-pill" id="liveVisitorPill">
+          <span class="pulse-dot"></span>
+          <span>Visits: <strong id="liveVisitorCount">1,250</strong></span>
+          <span style="color: var(--border-medium);">|</span>
+          <span style="color: var(--text-muted);">Unique: <strong id="uniqueVisitorCount">482</strong></span>
+        </div>
+        <a href="index.html#contact" class="nav-cta-btn">Let's Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-page-hero">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="index.html#projects">Projects</a>
+      <span>/</span>
+      <span style="color: var(--text-primary);">Graph &amp; Data Studio</span>
+    </nav>
+
+    <a href="index.html#projects" class="btn-back-portfolio">
+      <span>←</span> Return to Projects Grid
+    </a>
+
+    <div class="section-header" style="margin-bottom: 24px;">
+      <div class="section-tag">// KINETIC COMPUTATION</div>
+      <h1 class="section-title">Graph &amp; <span class="gradient-text-pink">Data Visualization Studio</span></h1>
+      <p class="section-subtitle">
+        Real-time hardware-accelerated force-directed node graph visualizer featuring kinetic particle physics, dynamic edge clustering, and interactive node dragging on an HTML5 2D Canvas.
+      </p>
+    </div>
+
+    <!-- Project Metadata Ribbon -->
+    <div class="project-meta-box">
+      <div class="project-meta-left">
+        <span class="badge-live status-pink">
+          <span class="pulse-dot" style="background: var(--neon-pink); width: 6px; height: 6px;"></span>
+          60 FPS Hardware Rendered
+        </span>
+        <span class="tech-tag">HTML5 Canvas API</span>
+        <span class="tech-tag">Force-Directed Physics</span>
+        <span class="tech-tag">Kinetic Euler Integration</span>
+        <span class="tech-tag">Dynamic Spring Edges</span>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--neon-cyan);">
+        💡 Drag any glowing node to test spring elasticity
+      </div>
+    </div>
+
+    <!-- Canvas Studio Container -->
+    <div class="project-page-container">
+      <div class="project-page-body">
+        <div class="graph-studio-container">
+          <div class="canvas-toolbar">
+            <div class="canvas-btn-group">
+              <button class="canvas-ctrl-btn" id="btnAddGraphNode">
+                <span>➕</span> Inject Kinetic Node
+              </button>
+              <button class="canvas-ctrl-btn" id="btnResetGraph">
+                <span>🔄</span> Reset Topology
+              </button>
+              <button class="canvas-ctrl-btn" id="btnToggleGraphSim">
+                <span>⏸️</span> Pause Physics
+              </button>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">
+              Device Pixel Ratio: <span style="color: var(--neon-green);">Accelerated</span> | Proximity Radius: <span style="color: var(--neon-cyan);">140px</span>
+            </div>
+          </div>
+
+          <canvas id="graphStudioCanvas" style="height: 520px;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Architecture & Graph Theory Notes -->
+    <section>
+      <div class="section-tag">// GRAPH THEORY &amp; COMPILER DETAILS</div>
+      <h2 style="font-size: 1.6rem; margin-bottom: 20px;">Topological Simulation Mechanics</h2>
+
+      <div class="architecture-notes-grid">
+        <div class="architecture-card">
+          <div class="arch-card-icon">📐</div>
+          <h3 class="arch-card-title">Euler Velocity Integration</h3>
+          <p class="arch-card-desc">
+            Simulates physical particle momentum, boundary rebounds, and sinusoidal pulsating radials across every tick of <code>requestAnimationFrame</code>.
+          </p>
+        </div>
+
+        <div class="architecture-card">
+          <div class="arch-card-icon">🕸️</div>
+          <h3 class="arch-card-title">Dynamic Distance Clustering</h3>
+          <p class="arch-card-desc">
+            Computes Euclidean distance between node pairs in $O(N^2)$ space, interpolating radiant alpha values to produce organic filament networks.
+          </p>
+        </div>
+
+        <div class="architecture-card">
+          <div class="arch-card-icon">🎯</div>
+          <h3 class="arch-card-title">High-DPI Retina Calibration</h3>
+          <p class="arch-card-desc">
+            Automatically scales canvas coordinate buffers against <code>window.devicePixelRatio</code> to eliminate blurriness on 4K and Retina displays.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top: 80px;">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; 2026 Varun Patil. Crafted with Vanilla HTML5, CSS3, ES6+, PHP 8.x &amp; Python 3.12.
+      </div>
+      <div class="footer-system-status">
+        <a href="project-ast.html" style="color: var(--neon-cyan); text-decoration: none;">Next: Python AST Inspector →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

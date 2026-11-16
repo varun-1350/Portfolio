@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Varun Patil - Full Stack Developer & AI Systems Engineer. B.Tech IT at PCE & B.S. Data Science at IIT Madras. Specializing in Python, PHP, AI/ML, and responsive web architectures.">
+  <meta name="keywords" content="Varun Patil, Full Stack Developer, AI Machine Learning, Data Science, IIT Madras, Pillai College of Engineering, PHP 8, Python, Neon Dark Portfolio">
+  <meta name="author" content="Varun Patil">
+  <meta name="theme-color" content="#050508">
+
+  <title>Varun Patil // Full-Stack Developer &amp; AI Systems Engineer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Neon Black Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Neon Background Lights -->
+  <div class="ambient-glow-orb ambient-orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow-orb ambient-orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow-orb ambient-orb-3" aria-hidden="true"></div>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Minimalist Neon Navigation Bar with Panda Logo -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo-brand" id="brandLogo">
+        <img src="assets/logo.jpg" alt="Varun Patil Logo" class="brand-logo-img">
+        <span class="logo-text">VARUN<span>.PATIL</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About &amp; Resume</a></li>
+        <li><a href="#projects" class="nav-link">Projects &amp; Lab</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions & Live Visitor Pill -->
+      <div class="nav-actions">
+        <div class="live-counter-pill" id="liveVisitorPill" title="Live unique visitors tracked via PHP 8 session & IP hashing">
+          <span class="pulse-dot"></span>
+          <span>Visits: <strong id="liveVisitorCount">1,250</strong></span>
+          <span style="color: var(--border-medium);">|</span>
+          <span style="color: var(--text-muted);">Unique: <strong id="uniqueVisitorCount">482</strong></span>
+        </div>
+
+        <a href="#contact" class="nav-cta-btn" id="navContactCta">
+          <span>⚡</span> Let's Connect
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Header Section -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="status-badge" id="heroStatusBadge">
+            <span class="pulse-dot" style="background: var(--neon-cyan); box-shadow: 0 0 8px var(--neon-cyan);"></span>
+            <span>SYSTEM ONLINE // PHP 8.4 // PYTHON 3.12 // IITM &amp; PCE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Developing <span class="gradient-text-cyan">Intelligent Systems</span>, Scalable Backends &amp; <span class="gradient-text-pink">Dynamic</span> Web Architectures.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Varun Patil</strong> — an engineer pursuing dual degrees at <strong>Pillai College of Engineering (B.Tech IT)</strong> and <strong>IIT Madras (B.S. Data Science)</strong>. Specializing in Python, PHP, machine learning, and high-contrast responsive interfaces.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary" id="btnHeroExplore">
+              <span>🚀</span> Explore Projects
+            </a>
+            <a href="project-ast.html" class="btn-secondary" id="btnHeroAstLab">
+              <span>🧬</span> Launch Python AST Lab
+            </a>
+            <a href="resume.pdf" download="Varun_Patil_Resume.pdf" class="btn-outline-neon" id="btnHeroDownloadResume">
+              <span>📄</span> Download Resume <span class="file-badge">PDF</span>
+            </a>
+          </div>
+
+          <!-- Telemetry Stats Grid -->
+          <div class="telemetry-grid">
+            <div class="telemetry-card">
+              <div class="telemetry-number">2<span>+</span></div>
+              <div class="telemetry-label">Degree Programs (PCE &amp; IITM)</div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-number">6<span>+</span></div>
+              <div class="telemetry-label">Core Languages (Python, Java, PHP)</div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-number">100<span>%</span></div>
+              <div class="telemetry-label">Event Infrastructure Uptime</div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-number">&lt;10<span>ms</span></div>
+              <div class="telemetry-label">PHP-Python Gateway Latency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Interactive Resume Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// IDENTITY &amp; CREDENTIALS</div>
+          <h2 class="section-title">About &amp; <span class="gradient-text-cyan">Interactive Resume</span></h2>
+          <p class="section-subtitle">
+            Solid foundation in software engineering, data analytics, systems programming, and high-concurrency database systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Profile & Bio Card with Panda Image -->
+          <aside class="profile-card" id="profileBioCard">
+            <div class="avatar-wrapper">
+              <img src="assets/logo.jpg" alt="Varun Patil Profile Photo" class="avatar-img-photo">
+              <div class="avatar-status-indicator" title="Open to Software Engineering & AI/ML Opportunities"></div>
+            </div>
+
+            <h3 class="profile-name">Varun Patil</h3>
+            <div class="profile-title">Full-Stack &amp; AI/ML Developer</div>
+            <p class="profile-bio">
+              Driven software developer bridging theoretical data science at IIT Madras with practical software engineering at Pillai College of Engineering.
+            </p>
+
+            <ul class="profile-meta-list">
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Location:</span>
+                <span class="profile-meta-val">Panvel, MH, India</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Primary Stack:</span>
+                <span class="profile-meta-val">Python / PHP / SQL / JS</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Status:</span>
+                <span class="profile-meta-val" style="color: var(--neon-green);">Open to Opportunities</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Education:</span>
+                <span class="profile-meta-val">B.Tech IT &amp; B.S. Data Science</span>
+              </li>
+            </ul>
+
+            <a href="resume.pdf" download="Varun_Patil_Resume.pdf" class="btn-download-resume" id="btnDownloadResumeSidebar">
+              <span>📥</span> Download Formal Resume <span class="file-badge">PDF • 455 KB</span>
+            </a>
+          </aside>
+
+          <!-- Right: Interactive Tabbed Resume -->
+          <div class="resume-tabs-container" id="resumeTabsContainer">
+            <nav class="tab-nav" role="tablist">
+              <button class="tab-btn active" data-tab="tab-skills" id="tabBtnSkills" role="tab">
+                <span>⚙️</span> Skills Matrix
+              </button>
+              <button class="tab-btn" data-tab="tab-experience" id="tabBtnExp" role="tab">
+                <span>💼</span> Experience
+              </button>
+              <button class="tab-btn" data-tab="tab-education" id="tabBtnEdu" role="tab">
+                <span>🎓</span> Education
+              </button>
+              <button class="tab-btn" data-tab="tab-core-projects" id="tabBtnCore" role="tab">
+                <span>⭐</span> Core Projects
+              </button>
+            </nav>
+
+            <!-- Tab 1: Skills Matrix -->
+            <div class="tab-pane active" id="tab-skills" role="tabpanel">
+              <div class="skills-grid">
+                
+
+                <!-- AI / ML & Data Science -->
+                <div class="skill-category-card">
+                  <div class="skill-cat-header">
+                    <span class="skill-cat-icon">🧠</span>
+                    <span>AI/ML &amp; Data Science</span>
+                  </div>
+                  <div class="skill-list">
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Machine Learning &amp; Neural Models</span>
+                        <span class="skill-level">92%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="92%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Data Analytics &amp; Statistical Modeling</span>
+                        <span class="skill-level">90%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">AST Code Parsers &amp; Complexity Analytics</span>
+                        <span class="skill-level">94%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="94%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Web & Mobile Development -->
+                <div class="skill-category-card">
+                  <div class="skill-cat-header">
+                    <span class="skill-cat-icon">🎨</span>
+                    <span>Web &amp; Mobile Engineering</span>
+                  </div>
+                  <div class="skill-list">
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">HTML5, Modern CSS3 &amp; Glassmorphism</span>
+                        <span class="skill-level">96%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="96%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Relational Databases &amp; MySQL Schema</span>
+                        <span class="skill-level">93%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="93%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">HTML5 Canvas 2D &amp; Android Development</span>
+                        <span class="skill-level">88%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="88%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tools & Infrastructure -->
+                <div class="skill-category-card">
+                  <div class="skill-cat-header">
+                    <span class="skill-cat-icon">🛠️</span>
+                    <span>Tools &amp; Infrastructure</span>
+                  </div>
+                  <div class="skill-list">
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Git &amp; GitHub Version Control</span>
+                        <span class="skill-level">94%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="94%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Live Hardware &amp; Network Setup</span>
+                        <span class="skill-level">90%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Graphic Design &amp; UI Prototyping</span>
+                        <span class="skill-level">88%</span>
+                      </div>
+                      <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="88%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Experience -->
+            <div class="tab-pane" id="tab-experience" role="tabpanel">
+              <div class="timeline-tree">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">Innovation Cell / Technical Associate</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">Innovation Cell — PCE</span>
+                      <span class="timeline-date">July 2024 — Oct 2025 | New Panvel</span>
+                    </div>
+                    <p class="timeline-desc">
+                      Managed relational databases and local event infrastructure, maintaining continuous uptime during college technical fests and state-level engineering workshops.
+                    </p>
+                    <p class="timeline-desc">
+                      Led a team of student technicians to configure hardware setups, sound systems, and network connections for live auditoriums, handling real-time technical troubleshooting under strict time constraints.
+                    </p>
+                    <div class="tag-list">
+                      <span class="tech-tag">Database Management</span>
+                      <span class="tech-tag">Hardware Infrastructure</span>
+                      <span class="tech-tag">Network Setup</span>
+                      <span class="tech-tag">Team Leadership</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Education -->
+            <div class="tab-pane" id="tab-education" role="tabpanel">
+              <div class="timeline-tree">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">B.Tech in Information Technology</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">Pillai College of Engineering</span>
+                      <span class="timeline-date">Aug 2023 — Present | Navi Mumbai, MH</span>
+                    </div>
+                    <p class="timeline-desc">
+                      <strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Database Management Systems (DBMS), Web Engineering, Software Engineering.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">B.S. in Data Science &amp; Applications</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">Indian Institute of Technology, Madras (IITM)</span>
+                      <span class="timeline-date">Jan 2023 — Present | Online / Distance</span>
+                    </div>
+                    <p class="timeline-desc">
+                      <strong>Relevant Coursework:</strong> Machine Learning Foundations, Statistical Modeling, Python for Data Science, Business Analytics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: Core Projects -->
+            <div class="tab-pane" id="tab-core-projects" role="tabpanel">
+              <div class="timeline-tree">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">Code Complexity &amp; AST Visualizer</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">Python 3.12 AST &amp; PHP Gateway</span>
+                      <span class="timeline-date"><a href="project-ast.html" style="color: var(--neon-cyan); text-decoration: none;">View Dedicated Page →</a></span>
+                    </div>
+                    <p class="timeline-desc">
+                      High-security code evaluator invoking Python 3.12 via PHP <code>exec()</code>. Extracts Abstract Syntax Trees, calculates McCabe Cyclomatic Complexity, measures maintainability index, and pinpoints syntax errors.
+                    </p>
+                    <div class="tag-list">
+                      <span class="tech-tag" style="color: var(--neon-cyan);">Python AST</span>
+                      <span class="tech-tag" style="color: var(--neon-purple);">PHP IPC</span>
+                      <span class="tech-tag">McCabe Metric</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">Interactive Graph &amp; Data Visualization Studio</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">HTML5 Canvas &amp; Kinetic Physics</span>
+                      <span class="timeline-date"><a href="project-graph.html" style="color: var(--neon-pink); text-decoration: none;">View Dedicated Page →</a></span>
+                    </div>
+                    <p class="timeline-desc">
+                      Hardware-accelerated force-directed node graph visualizer featuring kinetic particle physics, dynamic edge clustering, node injection, and interactive drag-and-drop.
+                    </p>
+                    <div class="tag-list">
+                      <span class="tech-tag" style="color: var(--neon-pink);">Canvas API</span>
+                      <span class="tech-tag">Physics Engine</span>
+                      <span class="tech-tag">ES6+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-role">Interactive Code Snippet Manager</h4>
+                    <div class="timeline-company-meta">
+                      <span class="timeline-company">PHP 8 &amp; Vanilla ES6</span>
+                      <span class="timeline-date"><a href="project-snippets.html" style="color: var(--neon-green); text-decoration: none;">View Dedicated Page →</a></span>
+                    </div>
+                    <p class="timeline-desc">
+                      High-speed developer vault featuring regex query matching, category-based language filtering, and one-tap clipboard integration.
+                    </p>
+                    <div class="tag-list">
+                      <span class="tech-tag" style="color: var(--neon-green);">PHP 8</span>
+                      <span class="tech-tag">Clipboard API</span>
+                      <span class="tech-tag">CSS Grid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Showcase Grid Section -->
+    <section class="section" id="projects" style="background: rgba(8, 8, 12, 0.5);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// PRODUCTION PORTFOLIO &amp; LABS</div>
+          <h2 class="section-title">Projects <span class="gradient-text-pink">Showcase Grid</span></h2>
+          <p class="section-subtitle">
+            Each project has a dedicated standalone page with deep architectural breakdowns and live interactive studios.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1: Interactive Code Snippet Manager -->
+          <article class="project-card" id="cardSnippetManager">
+            <div class="project-card-header">
+              <div class="project-icon">💻</div>
+              <span class="badge-live status-cyan">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: var(--neon-cyan); box-shadow: 0 0 6px var(--neon-cyan);"></span>
+                Developer Utility
+              </span>
+            </div>
+
+            <h3 class="project-title">Interactive Code Snippet Manager</h3>
+            <p class="project-desc">
+              High-speed developer vault with instant regex query matching, language filtering (PHP, Python, JS, CSS), and one-tap clipboard integration.
+            </p>
+
+            <div class="tag-list project-tech-tags">
+              <span class="tech-tag">PHP 8.x</span>
+              <span class="tech-tag">Vanilla JS</span>
+              <span class="tech-tag">CSS Grid</span>
+              <span class="tech-tag">Clipboard API</span>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <a href="project-snippets.html" class="btn-primary" style="flex: 1; text-align: center; justify-content: center; font-size: 0.88rem; padding: 11px 16px;">
+                <span>🚀</span> Dedicated Page
+              </a>
+              <button class="btn-secondary" data-open-modal="modal-snippet-manager" title="Quick in-page modal" style="padding: 11px 14px;">
+                <span>⚡</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Graph & Data Visualization Studio -->
+          <article class="project-card" id="cardGraphStudio">
+            <div class="project-card-header">
+              <div class="project-icon">🕸️</div>
+              <span class="badge-live status-pink">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: var(--neon-pink); box-shadow: 0 0 6px var(--neon-pink);"></span>
+                Interactive Canvas
+              </span>
+            </div>
+
+            <h3 class="project-title">Graph &amp; Data Studio</h3>
+            <p class="project-desc">
+              Real-time hardware-accelerated force-directed node graph visualizer featuring kinetic particle physics, dynamic edge clustering, and interactive node dragging.
+            </p>
+
+            <div class="tag-list project-tech-tags">
+              <span class="tech-tag">HTML5 Canvas</span>
+              <span class="tech-tag">Kinetic Physics</span>
+              <span class="tech-tag">ES6+</span>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <a href="project-graph.html" class="btn-primary" style="flex: 1; text-align: center; justify-content: center; font-size: 0.88rem; padding: 11px 16px; background: linear-gradient(135deg, var(--neon-pink), #B00050);">
+                <span>🚀</span> Dedicated Page
+              </a>
+              <button class="btn-secondary" data-open-modal="modal-graph-studio" title="Quick in-page modal" style="padding: 11px 14px;">
+                <span>⚡</span>
+              </button>
+            </div>
+          </article>
+            <!-- Project Card 4: Graph & Tree Visualizer -->
+            <article class="project-card" id="cardGraphTreeVisualizer">
+              <div class="project-card-header">
+                <div class="project-icon">🌳</div>
+                <span class="badge-live status-purple">
+                  <span class="pulse-dot" style="width: 6px; height: 6px; background: var(--neon-purple); box-shadow: 0 0 6px var(--neon-purple);"></span>
+                  Graph &amp; Tree Visualizer
+                </span>
+              </div>
+
+              <h3 class="project-title">Graph &amp; Tree Visualizer</h3>
+              <p class="project-desc">
+                Interactive explorer for hierarchical tree structures and network graphs with zoom, pan, and node‑detail overlays.
+              </p>
+
+              <div class="tag-list project-tech-tags">
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">SVG</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">ES6+</span>
+              </div>
+
+              <div style="display: flex; gap: 10px; margin-top: auto;">
+                <a href="project-graph.html" class="btn-primary" style="flex: 1; text-align: center; justify-content: center; font-size: 0.88rem; padding: 11px 16px; background: linear-gradient(135deg, var(--neon-purple), #5600A0);">
+                  <span>🚀</span> View Demo
+                </a>
+              </div>
+            </article>
+
+          <!-- Project Card 3: Code Complexity & AST Visualizer -->
+          <article class="project-card" id="cardAstVisualizer">
+            <div class="project-card-header">
+              <div class="project-icon">🧬</div>
+              <span class="badge-live status-purple">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: var(--neon-purple); box-shadow: 0 0 6px var(--neon-purple);"></span>
+                Python + PHP Gateway
+              </span>
+            </div>
+
+            <h3 class="project-title">Code Complexity &amp; AST Visualizer</h3>
+            <p class="project-desc">
+              Live Python analysis pipeline invoking local Python 3.12 via PHP <code>exec()</code>. Computes McCabe Cyclomatic Complexity, Maintainability Index, and hierarchical AST trees.
+            </p>
+
+            <div class="tag-list project-tech-tags">
+              <span class="tech-tag">Python 3.12 AST</span>
+              <span class="tech-tag">PHP exec() IPC</span>
+              <span class="tech-tag">McCabe Metric</span>
+              <span class="tech-tag">JSON Stream</span>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <a href="project-ast.html" class="btn-primary" style="flex: 1; text-align: center; justify-content: center; font-size: 0.88rem; padding: 11px 16px; background: linear-gradient(135deg, var(--neon-purple), #450099);">
+                <span>🚀</span> Dedicated Page
+              </a>
+              <button class="btn-secondary" data-open-modal="modal-ast-visualizer" title="Quick in-page modal" style="padding: 11px 14px;">
+                <span>⚡</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// INITIATE TRANSMISSION</div>
+          <h2 class="section-title">Get In <span class="gradient-text-cyan">Touch</span></h2>
+          <p class="section-subtitle">
+            Interested in collaborating on software engineering, AI/ML pipelines, or full-stack web applications? Send a message below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Channels & Socials -->
+          <div class="contact-info-card">
+            <h3 class="contact-highlight-title">Let's connect and build.</h3>
+            <p class="contact-highlight-desc">
+              Currently open for software engineering roles, AI/ML development opportunities, and technical collaborations.
+            </p>
+
+            <div class="contact-channels-list">
+              <a href="mailto:varunpatiloct2005@gmail.com" class="contact-channel-item">
+                <div class="channel-icon-box">✉️</div>
+                <div class="channel-details">
+                  <span class="channel-name">Direct Email</span>
+                  <span class="channel-val">varunpatiloct2005@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918850512267" class="contact-channel-item">
+                <div class="channel-icon-box">📞</div>
+                <div class="channel-details">
+                  <span class="channel-name">Direct Phone</span>
+                  <span class="channel-val">+91 88505 12267</span>
+                </div>
+              </a>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">📍</div>
+                <div class="channel-details">
+                  <span class="channel-name">Location</span>
+                  <span class="channel-val">Panvel, Maharashtra 410206</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links with glowing neon hover -->
+            <div class="socials-row">
+              <a href="https://github.com/varun-1350/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Varun's GitHub">
+                <span>🐙</span>
+              </a>
+              <a href="https://www.linkedin.com/in/varun-patil-26oct2005/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Varun's LinkedIn">
+                <span>💼</span>
+              </a>
+              <a href="mailto:varunpatiloct2005@gmail.com" class="social-circle-link" title="Send Email">
+                <span>✉️</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Neon Contact Form with Database Ingestion -->
+          <div class="contact-form-card">
+            <div id="contactFormNotice" class="form-notification"></div>
+
+            <form class="contact-form" id="contactPortfolioForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name or Organization *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Elena Rostova / CyberGrid Systems" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="elena@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactScope" class="form-label">Opportunity / Project Type</label>
+                <select id="contactScope" class="form-select">
+                  <option value="software_engineering">Software Engineering Role</option>
+                  <option value="aiml_project">AI/ML &amp; Data Science Collaboration</option>
+                  <option value="fullstack_dev">Full-Stack Web Development</option>
+                  <option value="consulting">General Inquiry / Technical Project</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message Payload *</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Describe the role, project, or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-form" id="btnSubmitContact">
+                <span>⚡</span> Transmit Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL 1: INTERACTIVE CODE SNIPPET MANAGER (Quick In-Page Demo)
+       ======================================================================== -->
+  <div class="modal-overlay" id="modal-snippet-manager" role="dialog" aria-modal="true" aria-labelledby="snippetModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="color: var(--neon-cyan); font-size: 1.3rem;">💻</span>
+          <h3 class="modal-title" id="snippetModalTitle">Interactive Code Snippet Manager</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <span style="color: var(--text-muted); font-size: 0.85rem;">Quick in-page preview. For the full studio, open the dedicated page.</span>
+          <a href="project-snippets.html" class="nav-cta-btn" style="padding: 5px 14px; font-size: 0.8rem;">Open Dedicated Page →</a>
+        </div>
+        <div class="snippet-toolbar">
+          <input type="text" class="snippet-search-input" id="snippetSearchInput" placeholder="Search snippets by keyword, syntax, or language (e.g. flock, ast, canvas, sql)...">
+          <button class="snippet-filter-btn active" data-category="all">All</button>
+          <button class="snippet-filter-btn" data-category="php">PHP 8</button>
+          <button class="snippet-filter-btn" data-category="python">Python</button>
+          <button class="snippet-filter-btn" data-category="js">JavaScript</button>
+          <button class="snippet-filter-btn" data-category="css">CSS3</button>
+        </div>
+
+        <div class="snippets-list-grid" id="snippetsListContainer">
+          <!-- Dynamically populated by main.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: INTERACTIVE GRAPH & DATA VISUALIZATION STUDIO
+       ======================================================================== -->
+  <div class="modal-overlay" id="modal-graph-studio" role="dialog" aria-modal="true" aria-labelledby="graphModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="color: var(--neon-pink); font-size: 1.3rem;">🕸️</span>
+          <h3 class="modal-title" id="graphModalTitle">Interactive Graph &amp; Data Studio</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <span style="color: var(--text-muted); font-size: 0.85rem;">Quick in-page preview. Drag nodes to test spring physics.</span>
+          <a href="project-graph.html" class="nav-cta-btn" style="padding: 5px 14px; font-size: 0.8rem; border-color: var(--neon-pink); color: var(--neon-pink);">Open Dedicated Page →</a>
+        </div>
+        <div class="graph-studio-container">
+          <div class="canvas-toolbar">
+            <div class="canvas-btn-group">
+              <button class="canvas-ctrl-btn" id="btnAddGraphNode">+ Inject Node</button>
+              <button class="canvas-ctrl-btn" id="btnResetGraph">Reset Graph</button>
+              <button class="canvas-ctrl-btn" id="btnToggleGraphSim">Pause Physics</button>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--neon-cyan);">
+              💡 Click and drag any glowing node to test spring physics
+            </div>
+          </div>
+
+          <canvas id="graphStudioCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 3: CODE COMPLEXITY & AST VISUALIZER
+       ======================================================================== -->
+  <div class="modal-overlay" id="modal-ast-visualizer" role="dialog" aria-modal="true" aria-labelledby="astModalTitle">
+    <div class="modal-container" style="max-width: 1040px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span style="color: var(--neon-purple); font-size: 1.3rem;">🧬</span>
+          <h3 class="modal-title" id="astModalTitle">Code Complexity &amp; AST Visualizer</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <span style="color: var(--text-muted); font-size: 0.85rem;">Communicates with local Python 3.12 via PHP exec() gateway.</span>
+          <a href="project-ast.html" class="nav-cta-btn" style="padding: 5px 14px; font-size: 0.8rem; border-color: var(--neon-purple); color: #B57CFF;">Open Dedicated Page →</a>
+        </div>
+        <div class="ast-workbench-grid">
+          <!-- Left: Code Input & Controls -->
+          <div class="code-editor-panel">
+            <div class="panel-header-bar">
+              <span>PYTHON SOURCE INPUT</span>
+              
+            </div>
+
+            <textarea id="pythonCodeInput" class="python-code-input" spellcheck="false">def hybrid_tim_sort(arr: list[int]) -> list[int]:
+    """Optimized hybrid sorting routine with insertion threshold."""
+    if len(arr) <= 1:
+        return arr
+    
+    threshold = 16
+    if len(arr) < threshold:
+        for i in range(1, len(arr)):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and arr[j] > key:
+                arr[j + 1] = arr[j]
+                j -= 1
+            arr[j + 1] = key
+        return arr
+    return sorted(arr)</textarea>
+
+            <div class="editor-actions-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+                Engine: Python 3.12 AST via PHP exec()
+              </span>
+              <button class="btn-run-python" id="btnRunAstAnalyze">
+                <span>⚡</span> Analyze via Python Backend
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Metrics & AST Tree Results -->
+          <div class="ast-results-panel">
+            <div class="panel-header-bar">
+              <span>METRICS &amp; AST HIERARCHY</span>
+              <span id="astStatusBadge" style="font-weight: 700; color: var(--neon-cyan);">INITIALIZING</span>
+            </div>
+
+            <!-- Mini stats row -->
+            <div class="ast-metrics-cards">
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricComplexityVal">3</div>
+                <div class="mini-stat-lbl">Cyclomatic Complexity</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricMiVal">82/100</div>
+                <div class="mini-stat-lbl">Maintainability Index</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricLocVal">14 / 18</div>
+                <div class="mini-stat-lbl">Logical / Total LOC</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val" id="metricExecTimeVal">4.2 ms</div>
+                <div class="mini-stat-lbl">Subprocess Exec Time</div>
+              </div>
+            </div>
+
+            <!-- Collapsible AST Tree Output -->
+            <div class="ast-tree-viewer" id="astTreeViewer">
+              <div style="color: var(--neon-cyan);">// Awaiting analysis payload...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; 2026 Varun Patil. Crafted with Vanilla HTML5, CSS3, ES6+, PHP 8.x &amp; Python 3.12.
+      </div>
+      <div class="footer-system-status">
+        <span class="status-pill-small">PHP 8.4.25</span>
+        <span class="status-pill-small">Python 3.12 AST</span>
+        <span class="status-pill-small" style="color: var(--neon-green); border-color: rgba(0, 255, 157, 0.3);">HTTP/2 200 OK</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Engine -->
+  <script src="main.js"></script>
+</body>
+</html>
